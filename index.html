@@ -39,6 +39,38 @@
     setupGame( "Giveaway Tool (THEME_NAME)", {
         path: "https://cdn.jsdelivr.net/gh/pixelplush",
         start: "giveaway_tool/pixelplush_theme/ga_pp_start/ga_pp_start1",
+        middle: "giveaway_tool/pixelplush_theme/ga_pp_middle/ga_pp_middle1",
+        end: "giveaway_tool/pixelplush_theme/ga_pp_end/ga_pp_end1",
+        labels: {
+            "prize": { x: 34, y: 132, color: "#ffe189", scenes: [ "start", "middle" ] },
+            "entries": { x: 30, y: 196, color: "#ffe189", scenes: [ "start" ] },
+
+            "winner_announce": { x: 360, y: 240, color: "#faedca", center: true, scenes: [ "middle" ] },
+            "winner_instruction": { x: 360, y: 430, color: "#f2c079", center: true, scenes: [ "middle" ] },
+
+            "congrats": { x: 360, y: 200, color: "#f2c079", center: true, scenes: [ "end" ] },
+            "item_won_announce": { x: 360, y: 410, color: "#f2c079", center: true, scenes: [ "end" ] },
+        },
+        coords: {
+            "prize_name": { x: 190, y: 132, color: "#330c04", scenes: [ "start", "middle" ] },
+            "giveaway_timer": { x: 570, y: 196, color: "#ffe189", scenes: [ "start" ] },
+            "entrant0_0": { x: 50, y: 260, color: "#4f2727", scenes: [ "start" ] },
+            "entrant0_1": { x: 370, y: 260, color: "#895e3e", scenes: [ "start" ] },
+            "entrant1_0": { x: 50, y: 310, color: "#895e3e", scenes: [ "start" ] },
+            "entrant1_1": { x: 370, y: 310, color: "#4f2727", scenes: [ "start" ] },
+            "entrant2_0": { x: 50, y: 360, color: "#4f2727", scenes: [ "start" ] },
+            "entrant2_1": { x: 370, y: 360, color: "#895e3e", scenes: [ "start" ] },
+            "entrant3_0": { x: 50, y: 410, color: "#895e3e", scenes: [ "start" ] },
+            "entrant3_1": { x: 370, y: 410, color: "#4f2727", scenes: [ "start" ] },
+            "entrant4_0": { x: 50, y: 460, color: "#4f2727", scenes: [ "start" ] },
+            "entrant4_1": { x: 370, y: 460, color: "#895e3e", scenes: [ "start" ] },
+
+            "winner_name": { x: 360, y: 334, color: "#4f2727", center: true, size: 88, scenes: [ "middle" ] },
+            "winner_timer": { x: 360, y: 510, color: "#f2c079", center: true, size: 92, scenes: [ "middle" ] },
+
+            "congrats_name": { x: 360, y: 280, color: "#faedca", center: true, size: 88, scenes: [ "end" ] },
+            "congrats_prize": { x: 360, y: 480, color: "#330c04", center: true, scenes: [ "end" ] },
+        }
     }, {
         channel: params.get( "channel" ),
         oauth: params.get( "oauth" ),
