@@ -1,0 +1,31 @@
+{
+  "name": "giveaway",
+  "version": "1.0.0",
+  "description": "PixelPlush Giveaway Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instafluff/giveaway.git"
+  },
+  "keywords": [
+    "PixelPlush",
+    "giveaway",
+    "tool",
+    "stream",
+    "livestream",
+    "maaya",
+    "instafluff"
+  ],
+  "author": "PixelPlush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/instafluff/giveaway/issues"
+  },
+  "homepage": "https://github.com/instafluff/giveaway#readme",
+  "dependencies": {
+    "webwebweb": "^1.4.10"
+  }
+}

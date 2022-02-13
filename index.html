@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giveaway (default) Tool by PixelPlush</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6EJRXTPH3Z"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6EJRXTPH3Z');
+    </script>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.11/dist/umd/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tinycolor2/dist/tinycolor-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/pixelplush/assets/pinkfluffyunicorn.min.js"></script>
+    <script src="js/giveaway.min.js"></script>
+    <style>
+    * {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    body {
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <h3 id="time"></h3>
+    <p id="entrants"></p>
+    <div id="unicorn-display"></div>
+    <script>
+    const params = new URLSearchParams( location.search );
+    // setupGame( "Giveaway Tool (THEME_NAME)", THEME_OPTIONS, {
+    setupGame( "Giveaway Tool (THEME_NAME)", {
+        path: "https://www.pixelplush.dev",
+        start: "giveaway_tool/pixelplush_theme/ga_pp_start/ga_pp_start1",
+    }, {
+        channel: params.get( "channel" ),
+        oauth: params.get( "oauth" ),
+        messageFormat: params.get( "messageFormat" ),
+        volume: params.get( "volume" ),
+        command: params.get( "command" ),
+    });
+    </script>
+</body>
+</html>
