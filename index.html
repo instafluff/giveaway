@@ -38,9 +38,9 @@
     // setupGame( "Giveaway Tool (THEME_NAME)", THEME_OPTIONS, {
     setupGame( "Giveaway Tool (THEME_NAME)", {
         path: "https://cdn.jsdelivr.net/gh/pixelplush",
-        start: "giveaway_tool/pixelplush_theme/ga_pp_start/ga_pp_start1",
-        middle: "giveaway_tool/pixelplush_theme/ga_pp_middle/ga_pp_middle1",
-        end: "giveaway_tool/pixelplush_theme/ga_pp_end/ga_pp_end1",
+        start: Array.from( { length: 20 }, ( _, i ) => `giveaway_tool/pixelplush_theme/ga_pp_start/ga_pp_start${i+1}` ),
+        middle: Array.from( { length: 20 }, ( _, i ) => `giveaway_tool/pixelplush_theme/ga_pp_middle/ga_pp_middle${i+1}` ),
+        end: Array.from( { length: 20 }, ( _, i ) => `giveaway_tool/pixelplush_theme/ga_pp_end/ga_pp_end${i+1}` ),
         labels: {
             "prize": { x: 34, y: 132, color: "#ffe189", scenes: [ "start", "middle" ] },
             "entries": { x: 30, y: 196, color: "#ffe189", scenes: [ "start" ] },
