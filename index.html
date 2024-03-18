@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Giveaway (Default (Beta)) Tool by PixelPlush</title>
+    <title>Giveaway (PixelPlush) Tool by PixelPlush</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6EJRXTPH3Z"></script>
     <script>
@@ -33,7 +33,7 @@
     <div id="unicorn-display"></div>
     <script>
     const params = new URLSearchParams( location.search );
-    setupGame( "Giveaway Tool (Default (Beta))", {
+    setupGame( "Giveaway Tool (PixelPlush)", {
 	"screenWidth": 729,
 	"screenHeight": 600,
 	"path": "https://cdn.jsdelivr.net/gh/pixelplush",
@@ -304,6 +304,9 @@
 	},
 	"joinColor": "#e38c56"
 }, {
+        fonts: {
+            custom: [ "Pixellari" ],
+        },
         channel: params.get( "channel" ),
         oauth: params.get( "oauth" ),
         refreshToken: params.get( "refreshToken" ),
